@@ -9,13 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var dialogueLinesModel: [DialogueLine]
+        
     var body: some View {
-        Text("Hello, World!")
+        return List {
+            ForEach(dialogueLinesModel, id: \.self) { item in
+                VStack {
+                    Text(item.line)
+                }
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        let dialogueLines = getDialogLines()
+        return ContentView(dialogueLinesModel: dialogueLines)
     }
 }

@@ -15,6 +15,15 @@
 		CEC26FBB24FF331900D83F22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC26FB924FF331900D83F22 /* LaunchScreen.storyboard */; };
 		CEC26FC624FF331900D83F22 /* BEDialoguePlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FC524FF331900D83F22 /* BEDialoguePlaybackTests.swift */; };
 		CEC26FD124FF331900D83F22 /* BEDialoguePlaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FD024FF331900D83F22 /* BEDialoguePlaybackUITests.swift */; };
+		CEC26FE324FF33E500D83F22 /* Dialogues.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC26FE224FF33E500D83F22 /* Dialogues.json */; };
+		CEC26FE424FF33E500D83F22 /* Dialogues.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC26FE224FF33E500D83F22 /* Dialogues.json */; };
+		CEC26FE524FF33E500D83F22 /* Dialogues.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC26FE224FF33E500D83F22 /* Dialogues.json */; };
+		CEC26FF124FF358800D83F22 /* DialogueLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF024FF358800D83F22 /* DialogueLine.swift */; };
+		CEC26FF224FF358800D83F22 /* DialogueLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF024FF358800D83F22 /* DialogueLine.swift */; };
+		CEC26FF324FF358800D83F22 /* DialogueLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF024FF358800D83F22 /* DialogueLine.swift */; };
+		CEC26FFA24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
+		CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
+		CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,9 @@
 		CEC26FCC24FF331900D83F22 /* BEDialoguePlaybackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BEDialoguePlaybackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC26FD024FF331900D83F22 /* BEDialoguePlaybackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEDialoguePlaybackUITests.swift; sourceTree = "<group>"; };
 		CEC26FD224FF331900D83F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC26FE224FF33E500D83F22 /* Dialogues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dialogues.json; sourceTree = "<group>"; };
+		CEC26FF024FF358800D83F22 /* DialogueLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueLine.swift; sourceTree = "<group>"; };
+		CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDialoguesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		CEC26FAD24FF331600D83F22 /* BEDialoguePlayback */ = {
 			isa = PBXGroup;
 			children = (
+				CEC26FF824FF3A2600D83F22 /* Services */,
+				CEC26FEA24FF357900D83F22 /* Models */,
+				CEC26FE024FF33E500D83F22 /* Resources */,
 				CEC26FAE24FF331600D83F22 /* AppDelegate.swift */,
 				CEC26FB024FF331600D83F22 /* SceneDelegate.swift */,
 				CEC26FB224FF331600D83F22 /* ContentView.swift */,
@@ -134,6 +149,46 @@
 				CEC26FD224FF331900D83F22 /* Info.plist */,
 			);
 			path = BEDialoguePlaybackUITests;
+			sourceTree = "<group>";
+		};
+		CEC26FE024FF33E500D83F22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEC26FE124FF33E500D83F22 /* JSON */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEC26FE124FF33E500D83F22 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				CEC26FE224FF33E500D83F22 /* Dialogues.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		CEC26FEA24FF357900D83F22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEC26FEB24FF357900D83F22 /* Codable */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEC26FEB24FF357900D83F22 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				CEC26FF024FF358800D83F22 /* DialogueLine.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		CEC26FF824FF3A2600D83F22 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +298,7 @@
 				CEC26FBB24FF331900D83F22 /* LaunchScreen.storyboard in Resources */,
 				CEC26FB824FF331900D83F22 /* Preview Assets.xcassets in Resources */,
 				CEC26FB524FF331900D83F22 /* Assets.xcassets in Resources */,
+				CEC26FE324FF33E500D83F22 /* Dialogues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC26FE424FF33E500D83F22 /* Dialogues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC26FE524FF33E500D83F22 /* Dialogues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC26FFA24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
 				CEC26FAF24FF331600D83F22 /* AppDelegate.swift in Sources */,
 				CEC26FB124FF331600D83F22 /* SceneDelegate.swift in Sources */,
+				CEC26FF124FF358800D83F22 /* DialogueLine.swift in Sources */,
 				CEC26FB324FF331600D83F22 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC26FC624FF331900D83F22 /* BEDialoguePlaybackTests.swift in Sources */,
+				CEC26FF224FF358800D83F22 /* DialogueLine.swift in Sources */,
+				CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC26FD124FF331900D83F22 /* BEDialoguePlaybackUITests.swift in Sources */,
+				CEC26FF324FF358800D83F22 /* DialogueLine.swift in Sources */,
+				CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
