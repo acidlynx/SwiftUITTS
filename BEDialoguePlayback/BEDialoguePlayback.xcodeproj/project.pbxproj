@@ -24,6 +24,9 @@
 		CEC26FFA24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
 		CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
 		CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
+		CEC26FFE24FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
+		CEC26FFF24FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
+		CEC2700024FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 		CEC26FE224FF33E500D83F22 /* Dialogues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dialogues.json; sourceTree = "<group>"; };
 		CEC26FF024FF358800D83F22 /* DialogueLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueLine.swift; sourceTree = "<group>"; };
 		CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDialoguesService.swift; sourceTree = "<group>"; };
+		CEC26FFD24FF3BC300D83F22 /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */,
+				CEC26FFD24FF3BC300D83F22 /* TTSService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -330,6 +335,7 @@
 				CEC26FB124FF331600D83F22 /* SceneDelegate.swift in Sources */,
 				CEC26FF124FF358800D83F22 /* DialogueLine.swift in Sources */,
 				CEC26FB324FF331600D83F22 /* ContentView.swift in Sources */,
+				CEC26FFE24FF3BC300D83F22 /* TTSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +346,7 @@
 				CEC26FC624FF331900D83F22 /* BEDialoguePlaybackTests.swift in Sources */,
 				CEC26FF224FF358800D83F22 /* DialogueLine.swift in Sources */,
 				CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
+				CEC26FFF24FF3BC300D83F22 /* TTSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +357,7 @@
 				CEC26FD124FF331900D83F22 /* BEDialoguePlaybackUITests.swift in Sources */,
 				CEC26FF324FF358800D83F22 /* DialogueLine.swift in Sources */,
 				CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
+				CEC2700024FF3BC300D83F22 /* TTSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

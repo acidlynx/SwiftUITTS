@@ -16,7 +16,7 @@ struct ContentView: View {
         return List {
             ForEach(dialogueLinesModel, id: \.self) { item in
                 VStack {
-                    Text(item.line)
+                    DialogueBalloonView(statement: item.line)
                 }
             }
         }
@@ -27,5 +27,14 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let dialogueLines = getDialogLines()
         return ContentView(dialogueLinesModel: dialogueLines)
+    }
+}
+
+struct DialogueBalloonView: View {
+    @State var statement: String
+    
+    var body: some View {
+        say(statement: statement)
+        return Text(statement)
     }
 }
