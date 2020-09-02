@@ -7,10 +7,16 @@
 //
 
 import Foundation
+import Combine
+
+var subscriptions: Set<AnyCancellable> = []
+var gameTimer: AnyCancellable?
 
 let kDialoguesFileName = "Dialogues"
 let kDialoguesFileExtension = "json"
 
+/// Read dialog lines from the JSON-file and return as `[DialogueLine]`
+/// The name and extenstion of file are stored in constants
 func getDialogLines() -> [DialogueLine]{
     guard let url = Bundle.main.url(forResource: kDialoguesFileName, withExtension: kDialoguesFileExtension) else {
         return []

@@ -14,9 +14,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-
-        let dialogueLines = getDialogLines()
-        let contentView = ContentView(dialogueLinesModel: dialogueLines)
+        
+        let dialogueViewModel = DialogueViewModel(dialogueLines: getDialogLines())
+        let contentView = ContentView(dialogueViewModel: dialogueViewModel).background(Color(hex: 0xF9FAFB))
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

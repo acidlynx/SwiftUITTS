@@ -24,9 +24,12 @@
 		CEC26FFA24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
 		CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
 		CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */; };
-		CEC26FFE24FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
-		CEC26FFF24FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
-		CEC2700024FF3BC300D83F22 /* TTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC26FFD24FF3BC300D83F22 /* TTSService.swift */; };
+		CEC2700724FFB34D00D83F22 /* DialogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700624FFB34D00D83F22 /* DialogueViewModel.swift */; };
+		CEC2700824FFB34D00D83F22 /* DialogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700624FFB34D00D83F22 /* DialogueViewModel.swift */; };
+		CEC2700924FFB34D00D83F22 /* DialogueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700624FFB34D00D83F22 /* DialogueViewModel.swift */; };
+		CEC2701024FFC0F400D83F22 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700F24FFC0F400D83F22 /* Color.swift */; };
+		CEC2701124FFC0F400D83F22 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700F24FFC0F400D83F22 /* Color.swift */; };
+		CEC2701224FFC0F400D83F22 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC2700F24FFC0F400D83F22 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +67,8 @@
 		CEC26FE224FF33E500D83F22 /* Dialogues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dialogues.json; sourceTree = "<group>"; };
 		CEC26FF024FF358800D83F22 /* DialogueLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogueLine.swift; sourceTree = "<group>"; };
 		CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDialoguesService.swift; sourceTree = "<group>"; };
-		CEC26FFD24FF3BC300D83F22 /* TTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSService.swift; sourceTree = "<group>"; };
+		CEC2700624FFB34D00D83F22 /* DialogueViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogueViewModel.swift; sourceTree = "<group>"; };
+		CEC2700F24FFC0F400D83F22 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 		CEC26FAD24FF331600D83F22 /* BEDialoguePlayback */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2700E24FFC0F400D83F22 /* Helpers */,
+				CEC2700524FFB34D00D83F22 /* ViewModels */,
 				CEC26FF824FF3A2600D83F22 /* Services */,
 				CEC26FEA24FF357900D83F22 /* Models */,
 				CEC26FE024FF33E500D83F22 /* Resources */,
@@ -191,9 +197,24 @@
 			isa = PBXGroup;
 			children = (
 				CEC26FF924FF3A2600D83F22 /* GetDialoguesService.swift */,
-				CEC26FFD24FF3BC300D83F22 /* TTSService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		CEC2700524FFB34D00D83F22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2700624FFB34D00D83F22 /* DialogueViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEC2700E24FFC0F400D83F22 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CEC2700F24FFC0F400D83F22 /* Color.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,11 +352,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC26FFA24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
+				CEC2700724FFB34D00D83F22 /* DialogueViewModel.swift in Sources */,
 				CEC26FAF24FF331600D83F22 /* AppDelegate.swift in Sources */,
 				CEC26FB124FF331600D83F22 /* SceneDelegate.swift in Sources */,
 				CEC26FF124FF358800D83F22 /* DialogueLine.swift in Sources */,
+				CEC2701024FFC0F400D83F22 /* Color.swift in Sources */,
 				CEC26FB324FF331600D83F22 /* ContentView.swift in Sources */,
-				CEC26FFE24FF3BC300D83F22 /* TTSService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +367,9 @@
 			files = (
 				CEC26FC624FF331900D83F22 /* BEDialoguePlaybackTests.swift in Sources */,
 				CEC26FF224FF358800D83F22 /* DialogueLine.swift in Sources */,
+				CEC2700824FFB34D00D83F22 /* DialogueViewModel.swift in Sources */,
 				CEC26FFB24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
-				CEC26FFF24FF3BC300D83F22 /* TTSService.swift in Sources */,
+				CEC2701124FFC0F400D83F22 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +379,9 @@
 			files = (
 				CEC26FD124FF331900D83F22 /* BEDialoguePlaybackUITests.swift in Sources */,
 				CEC26FF324FF358800D83F22 /* DialogueLine.swift in Sources */,
+				CEC2700924FFB34D00D83F22 /* DialogueViewModel.swift in Sources */,
 				CEC26FFC24FF3A2600D83F22 /* GetDialoguesService.swift in Sources */,
-				CEC2700024FF3BC300D83F22 /* TTSService.swift in Sources */,
+				CEC2701224FFC0F400D83F22 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
